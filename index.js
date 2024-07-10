@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use(passport.initialize());
 
-app.get("/", (req, res) => res.status(200).json({message:"Visit https://scribblesphere0.vercel.app/"});
+app.get("/",(req,res)=>res.status(200).json({message:"Visit https://scribblesphere.vercel.app/"}));
 
 app.use("/api/auth",authRoute);
 
